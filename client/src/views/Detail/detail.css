@@ -1,0 +1,117 @@
+.detail-container{
+    /* margin-top: 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed; */
+
+    position: relative;
+    display: grid;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    -ms-grid-columns: auto minmax(60%,900px);
+    grid-template-columns: auto minmax(60%,900px);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    margin-top: 150px;
+}
+
+.detail-img{
+    max-height: 60vh;
+    border: 1px solid #313131;
+    max-width: 100%;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.detail-container-2{
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 4rem;
+    position: relative;
+
+}
+
+
+
+.detail-title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: flex;
+    position:relative;
+    padding-bottom: 200px ;
+}
+
+
+.detail-bajada{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-size: 1rem;
+}
+
+.element-list{
+    align-items: flex-start;
+    line-height: 3rem;
+}
+
+.teams-style{
+    font-size: 25px;
+}
+
+.detail-description{
+    box-sizing: border-box;
+    position:absolute;
+    display: flex;
+    padding: 3rem 6rem;
+    margin-top: 400px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 970px) {
+    .detail-container-2 {
+        margin-top: 100px;
+        padding-left: 0px;
+    }
+    
+    .detail-title {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 140px;
+        padding-top: 20px;
+
+        font-size: 20px;
+    }
+
+    .detail-bajada{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+    
+
+    .teams-style{
+        font-size: 15px;
+        margin-top: 0px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .detail-img{
+        margin-bottom: 20px;
+    }
+    
+}

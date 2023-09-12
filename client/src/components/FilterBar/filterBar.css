@@ -1,0 +1,82 @@
+.italic{
+    font-style: italic;
+}
+
+.filterBar-Container{
+ padding-top: 80px;
+ padding-bottom: 10px;
+ display: flex;
+ background-color: #343a40e5;
+ justify-content:space-around;
+ align-items: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ height: 35px;
+}
+
+.filter-teams{
+    background-color: #fff;
+    font-size: 0.8rem;
+    background-color: #fff;
+    border: 1px solid #6f6f6f;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.1rem 0.1rem;
+    width: 11%;
+    height: 60%;
+    margin-left: 40px;
+  }
+
+  .filter-teams:hover {
+    border-color: #8c00ff;
+    background-color: #fdeb85;
+    left: 0;
+    width: 11.5%;
+    border: 1px solid #6f6f6f;
+    border-radius: 0.8rem;    
+    box-shadow: 0 0 4px #e9e1f8;  
+  }
+
+
+  .other-filters{
+    background-color: #fff;
+    font-size: 0.8rem;
+    background-color: #fff;
+    border: 1px solid #6f6f6f;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.1rem 0.1rem;
+    width: 10%;
+    height: 60%;
+  }
+
+  .other-filters:hover {
+    border-color: #8c00ff;
+    background-color: #f7ecff;
+    left: 0;
+    width: 10.2%;
+    border: 1px solid #6f6f6f;
+    border-radius: 0.8rem;    
+    box-shadow: 0 0 4px #e9e1f8;  
+  }
+
+  .reset-button{
+        background: none;
+        color:white;
+        border: 1px solid white;
+        border-radius: 1rem;   
+        cursor: pointer;
+        padding: 10px;
+        margin-right: 50px;
+  }
+
+  .reset-button:hover{
+    background: none;
+    color:white;
+    border: 1px solid white;
+    border-radius: 0.8rem;   
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 50px;
+    box-shadow: 0 0 4px #e9e1f8;  
+}

@@ -1,0 +1,114 @@
+.landing-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-size: cover;
+    background-position: center; */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.landing-title{
+    font-size: 2em;
+    font-weight: 400;
+    color: black;
+    text-shadow: 1px 1px 5px black;
+    animation: title 1.5s linear;
+    transition: .5s ease-in-out;
+    width: 50%;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.landing-link{
+    width: 45%;
+    margin-bottom: 100px;
+}
+
+.landing-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.landing-button{
+    margin-top:30px;
+    width: 100%;
+    height: 2rem;
+    border: 1px orange;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color:orange;
+    background-color: #343a40e5;
+}
+
+.landing-button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.landing-logo{
+       padding-bottom: 70px;
+}
+
+/* .landing-car{
+        position: relative;
+        width: 200px;
+        margin-right: 50px;
+        animation: car 3s linear;
+    }
+    
+    @keyframes car {
+        0% {
+            opacity: 0;
+        }
+        65% {
+            opacity: 0;
+            transform: scale(1.5)
+        }
+        70% {
+            opacity: 1;
+            transform: scale(1);
+            transform: translateX(10px);
+            transform: translateY(10px);
+        }
+        80% {
+            opacity: 1;
+            transform: translateX(-10px);
+            transform: translateY(-10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+            transform: translateY(0);
+        }
+    } */
+
+
+    @media screen and (max-width: 720px) {   
+    
+    .landing-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .landing-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:80%;
+        margin-bottom: 20px;
+    }
+    }

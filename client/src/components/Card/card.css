@@ -1,0 +1,91 @@
+.card{
+    -webkit-box-shadow: 0 0 1rem rgba(0,0,0,.6);
+    background-color: #1c1c1c;
+    box-shadow: 0 0 1rem rgba(0,0,0,.6);
+    width: 225px;
+    height: 380px;
+    margin: 25px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    cursor:pointer;
+    transform: translate(0);
+    transition: transform 0.25s ease-out;
+    
+}
+
+.card:hover{
+    transform: scale(1.05);
+  }
+
+
+.img{
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: .6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* transition: opacity .3s ease-in-out; */
+    width: 100%;
+}
+
+/* .img:hover{
+    background: linear-gradient(0deg,#171717 20%,rgba(1,1,1,0) 70%);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+} */
+
+/* .baseCard{
+    -webkit-tap-highlight-color: transparent;
+    text-shadow: 0 1px 1px #0000001f;
+    box-sizing: inherit;
+    background-color: yellow;
+    background-image: url();
+} */
+
+
+
+.card-title{
+    /* align-items: center;
+    font-size: 16px;
+    color:white;
+    padding: 5px 0px 5px 20px;
+    text-shadow: 0 1px 1px #0000001f; */
+
+    color: white;
+    display: block;
+    font-size: 2rem;
+    font-family: 'Gill Sans MT', sans-serif;
+    font-weight: 200;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-top: 230px;
+
+    
+}
+
+.card-team{
+    color:white;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    /* text-shadow: 0 1px 1px #0000001f; */
+}
+
+#blue{
+    color: rgb(159, 159, 248);
+    position: relative;
+    /* padding-left: 5px; */
+}
