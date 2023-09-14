@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getDrivers, getTeams } from '../../redux/actions';
 import CardsContainer from '../../components/CardsContainer/CardsContainer';
-import SearchBar from '../../components/SearchBar/SearchBar';
 import Pagination from '../../components/Pagination/Pagination';
 import FilterBar from '../../components/FilterBar/FilterBar';
 import './home.css'
@@ -32,8 +31,9 @@ const Home = () => {
     };
 
     return (
-        <>
-        <div className="homeContainer">
+
+        <div className="h-container">
+
 
             <FilterBar teams={teams}/>
 
@@ -45,7 +45,7 @@ const Home = () => {
                 totalItems={allDrivers.length}
             />
          </div>
-        </>
+    
     );
 }
 

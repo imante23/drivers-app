@@ -36,20 +36,20 @@ const Detail = () => {
 
               <div className='detail-bajada'>
                 <ul className="elements-list">
-                 <li>ID: {driver.id}</li>
-                 <li>Nationality: {driver.nationality}</li>
-                 <li>Date of Birth: {driver.dob}</li>
+                 <li>ID: <b>{driver.id}</b></li>
+                 <li>Nationality: <b>{driver.nationality}</b></li>
+                 <li>Date of Birth: <b>{driver.dob}</b></li>
               </ul>
               </div>
 
                  <div className="teams-style">
-                 <span>Teams: {Array.isArray(driver.teams) ? driver.teams.map(team => team.name).join(', ') : driver.teams}</span>
+                 <span>Teams: <span id="dark-blue">{Array.isArray(driver.teams) ? driver.teams.map(team => team.name).join(', ') : driver.teams}</span></span>
                  {/* <li>Teams: {driver.teams.map(team => team.name).join(', ')}</li> */}
                  </div>
         </div>
 
         <div className="detail-description">
-           <span>Description: {driver.description}</span>
+           <span>{driver.description}</span>
         </div>
     </div>
 );

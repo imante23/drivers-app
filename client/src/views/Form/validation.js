@@ -46,13 +46,9 @@ const validation = (form) =>{
         errors.description = "Write a description for your driver"
     }
 
-    if(!form.teams){
-        errors.teams = "Select at least one team"
+    if(form.teamsArr.length === 0){
+        errors.teamsArr = "Select at least one team"
     }
-
-    // if(form.description ===""){
-    //     errors.description = "Write one or more teams for your driver"
-    // }
 
     return errors;
 }

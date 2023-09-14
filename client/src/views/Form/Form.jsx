@@ -35,6 +35,7 @@ const Form = () => {
         image:"",
         dob:"",
         description:"", 
+        teamsArr: [],
     })
 
 
@@ -54,32 +55,45 @@ const Form = () => {
     const allTeams = [...teams].sort((a, b) => a.name.localeCompare(b.name));
 
 
-  function teamSelectHandler(event) {
-  const selectedTeam = allTeams.find((team) => team.name === event.target.value);
-
-  if (form.teamsArr.length >= 5) {
-      alert("Only 5 teams can be selected for each driver");
-      return;
-  }
-  if(form.teamsArr.includes(selectedTeam)) {
-      return;
-  } else {
-      setForm((prevState) => ({
+    function teamSelectHandler(event) {
+      const selectedTeam = allTeams.find((team) => team.name === event.target.value);
+    
+      if (form.teamsArr.length >= 5) {
+        alert("Only 5 teams can be selected for each driver");
+        return;
+      }
+      if (form.teamsArr.includes(selectedTeam)) {
+        return;
+      } else {
+        setForm((prevState) => ({
           ...prevState,
           teamsArr: [...prevState.teamsArr, selectedTeam]
-      }));
-  }}
+        }));
+        
+        // Actualiza los errores relacionados con teamsArr
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          teamsArr: ""
+        }));
+      }
+    }
 
 
 
-  function deleteHandler(element) {
-    const updatedTeamsArr = form.teamsArr.filter((team) => team !== element);
-
-    setForm((prevState) => ({
+    function deleteHandler(element) {
+      const updatedTeamsArr = form.teamsArr.filter((team) => team !== element);
+    
+      setForm((prevState) => ({
         ...prevState,
         teamsArr: updatedTeamsArr
-    }));
-  }
+      }));
+      
+      // Actualiza los errores relacionados con teamsArr
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        teamsArr: ""
+      }));
+    }
 
 
 
@@ -100,6 +114,7 @@ const Form = () => {
           image:"",
           dob:"",
           description:"",
+          teamsArr:[]
         });
       }
 
@@ -203,12 +218,22 @@ const Form = () => {
                             ))}
                         </select>
 
-                        {errors.teams && <span className='errors'>{errors.teams}</span>} 
+                        {errors.teamsArr && <span className='errors'>{errors.teamsArr}</span>} 
               
             </div>
 
             <div className='input-container'>
-            <button className='button-submit' type="submit">Create</button>
+            <button className='button-submit' type="submit"
+            disabled={
+              !form.forename ||
+              !form.surname ||
+              !form.nationality ||
+              !form.image ||
+              !form.dob ||
+              !form.description ||
+              form.teamsArr.length === 0
+              }
+            >Create</button>
             </div>
 
             <div>
@@ -227,6 +252,10 @@ const Form = () => {
 }
 
 export default Form;
+
+
+
+
 
 
 //fijate de hacer un setTimeOut en el handleSubmit

@@ -1,17 +1,16 @@
-.italic{
-    font-style: italic;
-}
+
 
 .filterBar-Container{
- padding-top: 80px;
- padding-bottom: 10px;
- display: flex;
- background-color: #343a40e5;
- justify-content:space-around;
- align-items: center;
- flex-direction: row;
- flex-wrap: wrap;
- height: 35px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    display: flex;
+    background-color: #343a40e5;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 35px;
+    width: 100%;
 }
 
 .filter-teams{
@@ -79,4 +78,24 @@
     padding: 10px;
     margin-right: 50px;
     box-shadow: 0 0 4px #e9e1f8;  
+}
+
+.italic{
+  font-style: italic;
+}
+
+@media screen and (max-width: 1055px){
+  .filterBar-Container{
+    align-items: flex-start;
+    display: flex;
+    /* height: 140px;
+    justify-content: space-between; */
+    left: 0;
+    /* padding-top: 1rem; */
+    position: relative;
+    top: 0;
+    width: 100vw;
+    /* z-index: 50; */
+  }
+  
 }

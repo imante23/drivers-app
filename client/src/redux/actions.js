@@ -16,7 +16,7 @@ export function getDrivers () {
             const response = await axios.get("http://localhost:3001/drivers");
             const drivers = response.data;
             return dispatch({
-                type: "GET_DRIVERS",
+                type: GET_DRIVERS,
                 payload: drivers,
             });
         } catch (error){}
@@ -29,7 +29,7 @@ export function getDriverByID (id) {
             const response = await axios.get(`http://localhost:3001/drivers/${id}`);
             const driver = response.data;
             return dispatch({
-                type: "GET_DRIVER_BY_ID",
+                type: GET_DRIVER_BY_ID,
                 payload: driver,
             });
         } catch (error){}
@@ -42,7 +42,7 @@ export function getDriverByName(name){
             const response = await axios.get(`http://localhost:3001/drivers/name?name=${name}`);
             const driver = response.data;
          return dispatch({
-            type: "GET_DRIVER_BY_NAME",
+            type: GET_DRIVER_BY_NAME,
             payload: driver,
         });
     } catch (error){}
@@ -56,7 +56,7 @@ export function getTeams(){
             const response = await axios.get(`http://localhost:3001/teams`);
             const teams = response.data;
             return dispatch({
-                type: "GET_TEAMS",
+                type: GET_TEAMS,
                 payload: teams,
             });
         } catch (error){}
@@ -105,14 +105,6 @@ export const clearAll = (payload) => {
 
 
 
-// export const clearDriverByName = (payload) => {
-//     return {
-//       type: "CLEAR_DRIVER_BY_NAME",
-//       payload,
-//     };
-//   };
-
-//Falta setError, reset y orderDrivers (para ordenarlos A-Z)
 
 
 

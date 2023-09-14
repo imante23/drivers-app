@@ -1,5 +1,4 @@
 .card{
-    -webkit-box-shadow: 0 0 1rem rgba(0,0,0,.6);
     background-color: #1c1c1c;
     box-shadow: 0 0 1rem rgba(0,0,0,.6);
     width: 225px;
@@ -31,26 +30,6 @@
     /* transition: opacity .3s ease-in-out; */
     width: 100%;
 }
-
-/* .img:hover{
-    background: linear-gradient(0deg,#171717 20%,rgba(1,1,1,0) 70%);
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 75%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 5;
-} */
-
-/* .baseCard{
-    -webkit-tap-highlight-color: transparent;
-    text-shadow: 0 1px 1px #0000001f;
-    box-sizing: inherit;
-    background-color: yellow;
-    background-image: url();
-} */
 
 
 

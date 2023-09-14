@@ -10,7 +10,7 @@ function Navbar(){
                 <p>Drivers</p>
             </div>
             <Link className="navButton" to="/home">Home</Link>
-            {/* <span>|</span> */}
+    
             <Link className="navButton" to="create">Create your driver</Link>
         </nav>
     )

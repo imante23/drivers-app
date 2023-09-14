@@ -130,34 +130,3 @@ export default rootReducer;
 
 
 
-        // case FILTER_BY_TEAM:
-        //     const driversCopy = [...state.drivers];
-        //     const filteredByTeam = 
-        //     action.payload === "Todos"
-        //     ? driversCopy
-        //     : driversCopy.filter((driver) => {
-        //         const driverTeams = driver.teams ? driver.teams.split(', ').map((team) => team.trim()) : [];
-        //         return driverTeams.includes(action.payload);
-        //   });
-        //     return {
-        //         ...state,
-        //         drivers: filteredByTeam,
-        //     }
-
-
-
-
-
-
-
-
-
-// const driverTeams = Array.isArray(driver.Teams)
-// ? driver.Teams.map((team) => team.name)
-// : driver.teams.split(', ').map((team) => team.trim());
-// return driverTeams.includes(action.payload);
-// });
-// return {
-// ...state,
-// drivers: filteredByTeam,
-// }

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { filterByTeam, filterByOrigin, orderByName, orderByBirth, clearAll } from '../../redux/actions';
 import React, { useState } from 'react';
-import SearchBar from '../SearchBar/SearchBar';
+import SearchBar from '../Searchbar/Searchbar';
 import './filterBar.css';
 
 const FilterBar = ({ teams }) => {

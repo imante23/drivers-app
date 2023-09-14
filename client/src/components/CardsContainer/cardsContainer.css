@@ -12,14 +12,30 @@
     border-radius: 10px;
     flex-wrap: wrap; */
 
-    align-items: center;
+    
     display: flex;
     flex-direction: row;    
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-around;
+    align-items: center;
     min-height: 100vh;
     width: 80%;
     padding-inline: 120px;
-    justify-content:space-around;
+    /* padding: 60px; */
     margin-top: 20px;
+}
+
+@media screen and (max-width: 720px){
+.Cards-container{
+    align-items: center;
+    background-color: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 100px;
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+}
 }

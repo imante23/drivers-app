@@ -19,7 +19,7 @@ async function getAllDriversC() {
       }
   });
 
-    // Realiza una solicitud a la API externa para obtener los conductores
+    // Realiza una solicitud a la API para obtener los conductores
     const response = (await axios.get('http://localhost:5000/drivers')).data;
     const driversApi = response.map((driver) => {
       return {

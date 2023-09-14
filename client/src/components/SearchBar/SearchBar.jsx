@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from "react-redux";
 import { getDriverByName } from "../../redux/actions.js";
-import "./searchBar.css";
+import "./searchbar.css";
 
 const SearchBar = () => {
     const [nameToSearch, setNameToSearch] = useState("");
@@ -47,7 +47,11 @@ const SearchBar = () => {
         <div className="search-bar">
         <input className="input-search" type="search" onChange={handleInput} value={nameToSearch} placeholder="Write any name..." onKeyDown={handleKeyDown} />
         <button className="butt" onClick={handleSearch}>Search</button>
-        {showMessageNotFound && <p>Driver not found. Please try a different name.</p>}
+        { showMessageNotFound && 
+        <div className="filterbar-message">
+          <div className="filterbar-arrowup"></div>
+          <p>Driver not found. Please try a different name.</p>
+        </div>}
         </div>
 
     );
@@ -57,16 +61,3 @@ const SearchBar = () => {
 export default SearchBar;
 
 
-
-// const handleSearch = () => {
-//     if(!nameToSearch){
-//         alert("Please write a valid name");
-//     }  else {
-//         dispatch(getDriverByName(nameToSearch));
-//         console.log("Esta buscando");
-//         setNameToSearch("");
-
-//         // .catch((error)=>{
-//         // alert("Racer not found")});
-//     }
-// };

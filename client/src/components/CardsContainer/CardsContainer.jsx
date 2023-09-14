@@ -8,7 +8,7 @@ const CardsContainer = ({drivers}) =>{
    // const drivers=useSelector((state)=>state.drivers);
    const driverByName=useSelector((state)=>state.driverByName);
 
-   //combinar los resultados de la busqueda por nombre con los drivers predeterminados
+   //combino los resultados de la busqueda por nombre con los drivers predeterminados
    const combinedDrivers = driverByName.length > 0 ? driverByName : drivers;
    
 

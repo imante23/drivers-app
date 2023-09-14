@@ -134,6 +134,10 @@ textarea{
     cursor: pointer;
   }
 
+  .button-submit:disabled{
+    cursor: not-allowed;
+  }
+
   .button-delete{
     background-color: black;
     color: #fff;
