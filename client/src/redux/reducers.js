@@ -119,14 +119,28 @@ function rootReducer(state=initialState,action){
                 selectedName:"",
                 selectedBirth: "",                 
             }
+            
 
-        default:
-            return state
-    }
-}
+            default:
+                return state
+            }
+        }
+        
+    export default rootReducer;
+        
+        
+        
+        
+        
+    // case NEW_TEAMS:
+    //     const allDriversCopy3= [...state.driversCopy];
+    //     const filteredButtonTeams = action.payload 
+    //     allDriversCopy3.filter(driver=>{
+    //         const driverTeams = driver.Teams.map(team=>team.name);
+    //         return driverTeams.includes("Ferrari") || driverTeams.includes("McLaren");
+    //     })
 
-export default rootReducer;
-
-
-
-
+    //     return{
+    //         ...state,
+    //         drivers: filteredButtonTeams,
+    //     }

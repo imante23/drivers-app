@@ -58,7 +58,30 @@
 
 .landing-logo{
        padding-bottom: 70px;
+       animation-name: mover-fuera;
+       animation-duration: 1.5s;
+       position: relative;
+     }   
+     
+     @keyframes mover-fuera{
+       from {right:40%;}
+       to {right:0;}
+     }
+
+.huella{
+    padding-left: 0px;
+    animation-name: desaparece;
+    animation-duration: 0.5s;
+    position: relative;
+    left:0;
 }
+
+
+
+
+/* .landing-logo:hover{
+    filter: sepia(60%);
+} */
 
 
 

@@ -25,7 +25,7 @@ const CardsContainer = ({drivers}) =>{
  });
 
     return(
-        <div className='Cards-container'>
+        <div className='C-container'>
          
         {normalizedDrivers.map((driver)=>{
 

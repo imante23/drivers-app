@@ -53,6 +53,7 @@ const FilterBar = ({ teams }) => {
 
 
 
+
     return (
         <div className="filterBar-Container">
             <select className="filter-teams" value={selectedTeam} onChange={handleFilterTeam}>

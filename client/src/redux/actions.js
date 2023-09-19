@@ -10,6 +10,7 @@ export const ORDER_BY_NAME = "ORDER_BY_NAME";
 export const ORDER_BY_BIRTH = "ORDER_BY_BIRTH";
 export const CLEAR_ALL = "CLEAR_ALL";
 
+
 export function getDrivers () {
     return async function (dispatch){
         try{
@@ -102,6 +103,14 @@ export const clearAll = (payload) => {
       payload,
     };
   };
+
+//   export const newTeams = (payload) => {
+//     return {
+//       type: "NEW_TEAMS",
+//       payload,
+//     };
+//   };
+
 
 
 

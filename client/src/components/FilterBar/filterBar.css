@@ -1,6 +1,9 @@
 
 
 .filterBar-Container{
+    /* padding: 10px 0; */
+
+
     padding-top: 80px;
     padding-bottom: 10px;
     display: flex;
@@ -16,7 +19,6 @@
 .filter-teams{
     background-color: #fff;
     font-size: 0.8rem;
-    background-color: #fff;
     border: 1px solid #6f6f6f;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -40,7 +42,6 @@
   .other-filters{
     background-color: #fff;
     font-size: 0.8rem;
-    background-color: #fff;
     border: 1px solid #6f6f6f;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -88,6 +89,28 @@
   .filterBar-Container{
     align-items: flex-start;
     display: flex;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    width: 100vw;
+    /* z-index: 50; */
+  }
+
+  .filter-teams{
+    padding: 0.1rem 0.1rem;
+    width: 11%;
+    height: 60%;
+    margin-left: 10px;
+  }
+  .reset-button{
+    padding: 10px;
+    margin-right: 10px;
+}
+}
+
+@media screen and (max-width: 720px){
+  .filterBar-Container{
+    align-items: flex-start;
+    display: flex;
     /* height: 140px;
     justify-content: space-between; */
     left: 0;
@@ -97,5 +120,36 @@
     width: 100vw;
     /* z-index: 50; */
   }
-  
+
+  .filter-teams{
+    padding: 0.1rem 0.1rem;
+    width: 11%;
+    height: 60%;
+    margin-left: 10px;
+  }
+  .reset-button{
+    padding: 10px;
+    margin-right: 10px;
 }
+}
+
+@media screen and (max-width: 300px){
+  .filterBar-Container{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    width: 100vw;
+    /* z-index: 50; */
+  }
+
+  .filter-teams{
+    padding: 0.1rem 0.1rem;
+    width: 11%;
+    height: 60%;
+    margin-left: 10px;
+  }
+  .reset-button{
+    margin-top: 20px;
+}
+}
+

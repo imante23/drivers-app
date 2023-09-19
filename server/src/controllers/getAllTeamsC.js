@@ -75,66 +75,6 @@ module.exports = getAllTeamsC;
 
 
 
-// const axios = require('axios');
-// const { Team, Driver } = require('../db'); // Asegúrate de importar los modelos adecuados
-
-// async function getAllTeamsC() {
-//   try {
-//     // Obtener todos los equipos existentes en la base de datos
-//     const existingTeams = await Team.findAll();
-
-//     // Si no hay equipos en la base de datos, obtenerlos de la API
-//     if (existingTeams.length === 0) {
-//       const response = await axios.get('http://localhost:5000/drivers');
-//       const driverData = response.data;
-
-//       // Crear un conjunto para almacenar nombres únicos de equipos
-//       const uniqueTeams = new Set();
-
-//       // Iterar sobre los datos de los conductores y extraer los equipos
-//       driverData.forEach(driver => {
-//         const teamsString = driver.teams;
-//         if (teamsString && teamsString.trim() !== "") {
-//           // Separar los equipos por comas y agregarlos al conjunto de equipos únicos
-//           const teamsArray = teamsString.split(",").map(team => team.trim());
-//           teamsArray.forEach(team => uniqueTeams.add(team));
-//         }
-//       });
-
-//       // Verificar si los equipos ya existen en la base de datos antes de guardarlos
-//       const teamsToSave = [...uniqueTeams];
-//       const teamsToSaveInDB = [];
-//       for (const teamName of teamsToSave) {
-//         const existingTeam = await Team.findOne({ where: { name: teamName } });
-//         if (!existingTeam) {
-//           teamsToSaveInDB.push({ name: teamName });
-//         }
-//       }
-
-//       // Guardar los equipos nuevos en la base de datos
-//       if (teamsToSaveInDB.length > 0) {
-//         await Team.bulkCreate(teamsToSaveInDB);
-//       }
-
-//       // Obtener nuevamente todos los equipos, incluyendo los recién guardados
-//       const allTeams = await Team.findAll();
-//       return allTeams;
-//     } else {
-//       // Si ya hay equipos en la base de datos, simplemente devolverlos
-//       return existingTeams;
-//     }
-//   } catch (error) {
-//     throw error;
-//   }
-// }
-
-// module.exports = getAllTeamsC;
-
-
-
-
-
-
 
 
 
