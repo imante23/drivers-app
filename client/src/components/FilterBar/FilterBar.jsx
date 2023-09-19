@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { filterByTeam, filterByOrigin, orderByName, orderByBirth, clearAll } from '../../redux/actions';
 import React, { useState } from 'react';
-// import SearchBar from '../SearchBar/SearchBar';
+import SearchBar from '../SearchBar/SearchBar';
 import './filterBar.css';
 
 const FilterBar = ({ teams }) => {
@@ -85,7 +85,7 @@ const FilterBar = ({ teams }) => {
                 <option value="des">From youngers to olders</option>
             </select>
 
-           {/* <SearchBar /> */}
+           <SearchBar />
 
             <button className="reset-button" onClick={handleResetFilters}>Reset</button>
 
