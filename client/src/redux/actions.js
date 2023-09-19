@@ -14,7 +14,7 @@ export const CLEAR_ALL = "CLEAR_ALL";
 export function getDrivers () {
     return async function (dispatch){
         try{
-            const response = await axios.get("http://localhost:3001/drivers");
+            const response = await axios.get("/drivers");
             const drivers = response.data;
             return dispatch({
                 type: GET_DRIVERS,
@@ -27,7 +27,7 @@ export function getDrivers () {
 export function getDriverByID (id) {
     return async function (dispatch){
         try{
-            const response = await axios.get(`http://localhost:3001/drivers/${id}`);
+            const response = await axios.get(`/drivers/${id}`);
             const driver = response.data;
             return dispatch({
                 type: GET_DRIVER_BY_ID,
@@ -40,7 +40,7 @@ export function getDriverByID (id) {
 export function getDriverByName(name){
     return async function (dispatch){
         try{
-            const response = await axios.get(`http://localhost:3001/drivers/name?name=${name}`);
+            const response = await axios.get(`/drivers/name?name=${name}`);
             const driver = response.data;
          return dispatch({
             type: GET_DRIVER_BY_NAME,
@@ -54,7 +54,7 @@ export function getDriverByName(name){
 export function getTeams(){
     return async function(dispatch){
         try{
-            const response = await axios.get(`http://localhost:3001/teams`);
+            const response = await axios.get(`/teams`);
             const teams = response.data;
             return dispatch({
                 type: GET_TEAMS,

@@ -8,6 +8,11 @@ import Detail from './views/Detail/Detail.jsx';
 import Form from './views/Form/Form.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import { useLocation } from 'react-router-dom';
+import axios from 'axios';
+axios.defaults.baseURL='http://localhost:3001/'
+
+
+
 
 function App() {
   const location = useLocation();
